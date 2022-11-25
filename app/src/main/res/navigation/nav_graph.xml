@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/gempaterkiniListFragment">
+
+    <fragment
+        android:id="@+id/gempaterkiniListFragment"
+        android:name="com.example.gempaterkini.ui.GempaterkiniDetailFragment"
+        android:label="GempaBumi" >
+        <action
+            android:id="@+id/action_gempaterkiniListFragment_to_gempaterkiniDetailFragment"
+            app:destination="@id/gempaterkiniDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gempaterkiniDetailFragment"
+        android:name="com.example.gempaterkini.ui.GempaterkiniDetailFragment"
+        android:label="fragment_gempaterkini_detail"
+        tools:layout="@layout/fragment_gempaterkini_detail" />
+</navigation>
